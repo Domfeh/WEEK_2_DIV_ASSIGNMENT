@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>for-loop that  iterates from 0 to 15</title>
+
+<style type="text/css">
+	body {
+
+   padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;		
+	}
+
+</style>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+var text= " the current number ";
+var text2= "  is even \n";
+var text3="  is odd \n";
+
+
+for (var num=0; num<=15; num++) { // for loop that iterates from 0-15
+
+// if the number is 0, it displays it as even number 
+        if (num==0) {
+
+                document.write( text + num + text2);
+        } 
+
+
+  // if the number modulus 2 is zero, the number is even
+        else if (num % 2 ==0) {
+                document.write(text + num + text2);   
+        }
+
+// else the number is an odd number 
+        else {
+                document.write(text + num + text3);
+        } 
+}
+
+
+</script>
+
+</body>
+</html>
